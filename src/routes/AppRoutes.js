@@ -2,18 +2,21 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
-import Projects from '../pages/Projects/Projects';
 import Services from '../pages/Services/Services';
+import Projects from '../pages/Projects/Projects';
+import ProjectDetail from '../pages/Projects/ProjectDetail';
+
 import Contact from '../pages/Contact/Contact';
 
 const AppRoutes = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/sobre" element={<About />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/projetos" element={<Projects />} />
+            <Route path="/projetos/:id" element={<ProjectDetail />} />
+            <Route path="/contato" element={<Contact />} />
         </Routes>
     );
 };
