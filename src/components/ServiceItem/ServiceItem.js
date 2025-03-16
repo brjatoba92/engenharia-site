@@ -20,3 +20,5 @@ const ServiceItem = ({ service }) => {
         </div>
     );
 };
+
+export default ServiceItem;
